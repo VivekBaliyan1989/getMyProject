@@ -1,0 +1,69 @@
+package PageDefination;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import PageObject.LoginPage;
+import cucumber.api.java.en.*;
+
+public class Steps {
+	
+	public WebDriver driver;
+	public LoginPage lp;
+	
+	@Given("User launch browser")
+	public void user_launch_browser() {
+	    System.setProperty("webdriver.chrome.driver","F:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+	    driver = new ChromeDriver(); 
+		
+	    lp = new LoginPage(driver);
+	}
+
+	@When("User open url {string}")
+	public void user_open_URL(String url) {
+	    
+		driver.get(url);
+	}
+
+	@When("User Enter Email {string} and Password {string}")
+	public void user_Enter_Email_and_Password(String email, String password) {
+	    
+		lp.setEmail(email);
+		lp.setPassword(password);
+		
+	}
+
+	@When("User Click on Login")
+	public void user_Click_on_Login() {
+		
+		lp.clickLogin();
+	   
+	}
+
+	@Then("Page title should be {string}")
+	public void page_title_should_be(String title) {
+	    if (driver.getPageSource().contains("Login was unsuccessful."))
+	    {
+	    	driver.close();
+	    	Assert.assertTrue(false);
+	    }else {
+			Assert.assertEquals(title, driver.getTitle());
+		}
+	}
+
+	@When("User click on Logout")
+	public void user_click_on_Logout() {
+	    
+		lp.clickLogout();
+		
+	}
+
+	@Then("Close browser")
+	public void close_browser() {
+		
+		driver.quit();
+	    
+	}
+
+}

@@ -1,0 +1,26 @@
+package PageMethod;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import PageObject.LoginPage;
+
+
+public class LoginMethod {
+	
+	public WebDriver driver = new ChromeDriver();
+	
+	public LoginPage lpo;
+	//WebOrderPageObject wopo = new WebOrderPageObject();
+	
+	public LoginMethod(WebDriver driver) {
+
+		//super(driver);
+		PageFactory.initElements(driver, LoginMethod.class);
+		this.driver=driver;
+	}
+
+	
+
+}

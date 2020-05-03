@@ -1,0 +1,23 @@
+package PageDefination;
+
+import org.openqa.selenium.WebDriver;
+
+import PageMethod.CustomerPageMethod;
+import PageObject.LoginPage;
+
+public class CommonFeature {
+	
+	public WebDriver driver;
+	public LoginPage lp;
+	
+	public CustomerPageMethod addCust;
+	
+	public static String randomstring() {
+		
+		String genratedString = RandomStringUntils.randomAlphabetics();
+		
+		return(genratedString);
+		
+	}
+
+}

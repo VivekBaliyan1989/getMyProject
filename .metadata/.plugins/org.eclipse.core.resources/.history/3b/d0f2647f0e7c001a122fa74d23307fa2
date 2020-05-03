@@ -1,0 +1,139 @@
+package PageMethod;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+import PageObject.CustomerPageObject;
+
+public class CustomerPageMethod {
+	
+	public WebDriver ldriver;
+	
+	public CustomerPageObject acp;
+
+	public CustomerPageMethod(WebDriver rdriver)
+	{
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
+	}
+	
+	public String getPageTitle() {
+		
+		return ldriver.getTitle();
+				
+	}
+	
+	public void clickOnCustomermenu()
+	{
+		acp.lkhCustomer_menu.click();
+	}
+	
+	public void clickOnCustomermenuitem() 
+	{
+	
+		acp.lkhCustomer_menuitem.click();
+	}
+	
+	public void clickOnAddbtn() {
+		acp.btnAddNew.click();
+	}
+	
+	public void setEmail(String email) 
+	{
+		
+		acp.txtEmail.sendKeys(email);
+	}
+	
+	public void setPassword(String passwoed) 
+	{
+		acp.txtPassword.sendKeys(passwoed);
+	}
+	
+	public void setFirestName(String firestName) 
+	{
+		acp.txtFirestName.sendKeys(firestName);
+	}
+	
+	public void setLastName(String lastName) 
+	{
+		acp.txtLastName.sendKeys(lastName);
+	}
+	
+	public void clickOnGender(String gender) 
+	{
+		if(gender.equals("Male"))
+		{
+			acp.rdMaleGender.click();
+			
+		}else if (gender.equals("Female")) {
+			
+			acp.rdFemaleGender.click();
+			
+		} else {
+			acp.rdMaleGender.click();//Default
+		}
+		
+	}
+	public void setDOB(String DOB)
+	{
+		acp.txtDOB.sendKeys(DOB);
+	}
+	
+	public void setCustomerRole(String role) throws InterruptedException 
+	{
+		if(!role.equals("Vendors"))
+		{
+			acp.txtCustomer_roles.clear();
+		}
+		
+		acp.txtCustomer_roles.click();
+		
+		Thread.sleep(3000);
+		
+		if(role.equals("Administrators"))
+		{
+			acp.lstitemAdministrators.click();
+		}else if(role.equals("Forum Moderators"))
+		{
+			acp.lstitemForum_Moderators.click();
+		}else if(role.equals("Forum Guests"))
+		{
+			acp.lstitemGuests.click();
+		}else if(role.equals("Registered"))
+		{
+			acp.lstitemRegistered.click();
+		}else if(role.equals("Vendors"))
+		{
+			acp.lstitemVendors.click();
+		}else
+		{
+			acp.lstitemAdministrators.click();
+		}
+		
+	}
+		
+	public void setManagerOfVendor(String value)
+	{
+		Select sel = new Select(acp.drpVendor);
+		
+		sel.selectByValue(value);
+	}
+		
+	
+	public void setCompany(String company) 
+	{
+		acp.txtNameCompany.sendKeys(company);
+	}
+	
+	public void setAdminComment(String comment) 
+	{
+		acp.txtAdminComment.sendKeys(comment);
+	}
+	
+	public void setSubmit() {
+		acp.btnSubmit.click();
+	}
+
+}

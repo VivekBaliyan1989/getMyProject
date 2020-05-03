@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testRun" project="Cucumber001_Framework" tests="8" started="8" failures="2" errors="0" ignored="1">
+  <testsuite name="TestRunner.testRun" time="17.616">
+    <testsuite name="Feature: Login" time="17.616">
+      <testsuite name="Scenario: Successful login with valide credentials" time="17.573" incomplete="true">
+        <failure>
+          <expected>Your Story. Login</expected>
+          <actual>Your store. Login</actual>
+          org.junit.ComparisonFailure: expected:&lt;Your [Story]. Login&gt; but was:&lt;Your [store]. Login&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:144)&#13;
+	at PageDefination.Steps.page_title_should_be(Steps.java:50)&#13;
+	at ✽.Then Page title should be "Your Story. Login"(src/test/resources/Feature/LoginFeaure.feature:11)&#13;
+&#13;
+
+        </failure>
+        <testcase name="Given User launch browser" classname="Scenario: Successful login with valide credentials" time="6.284"/>
+        <testcase name="When User opens URL &quot;https://admin-demo.nopcommerce.com/login&quot;" classname="Scenario: Successful login with valide credentials" time="0.31"/>
+        <testcase name="And User Enter Email &quot;admin@yourstore.com&quot; and Password &quot;admin&quot;" classname="Scenario: Successful login with valide credentials" time="8.053"/>
+        <testcase name="And User Click on Login" classname="Scenario: Successful login with valide credentials" time="0.131"/>
+        <testcase name="Then Page title should be &quot;Dashboard / nopCommerce administration&quot;" classname="Scenario: Successful login with valide credentials" time="2.748"/>
+        <testcase name="When User click on Logout" classname="Scenario: Successful login with valide credentials" time="0.027"/>
+        <testcase name="Then Page title should be &quot;Your Story. Login&quot;" classname="Scenario: Successful login with valide credentials" time="0.02">
+          <failure>
+            <expected>Your Story. Login</expected>
+            <actual>Your store. Login</actual>
+            org.junit.ComparisonFailure: expected:&lt;Your [Story]. Login&gt; but was:&lt;Your [store]. Login&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:144)&#13;
+	at PageDefination.Steps.page_title_should_be(Steps.java:50)&#13;
+	at ✽.Then Page title should be "Your Story. Login"(src/test/resources/Feature/LoginFeaure.feature:11)&#13;
+&#13;
+
+          </failure>
+        </testcase>
+        <testcase name="And Close browser" classname="Scenario: Successful login with valide credentials" time="0.017" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testRun" project="Cucumber001_Framework" tests="24" started="24" failures="0" errors="0" ignored="24">
+  <testsuite name="TestRunner.testRun" time="0.054">
+    <testsuite name="Feature: Login" time="0.054">
+      <testsuite name="Scenario: Successful login with valide credentials" time="0.0">
+        <testcase name="Given User launch browser" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+        <testcase name="When User opens URL &quot;https://admin-demo.nopcommerce.com/login&quot;" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+        <testcase name="And User Enter Email &quot;admin@yourstore.com&quot; and Password &quot;admin&quot;" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+        <testcase name="And User Click on Login" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+        <testcase name="Then Page title should be &quot;Dashboard / nopCommerce administration&quot;" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+        <testcase name="When User click on Logout" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+        <testcase name="Then Page title should be &quot;Your store. Login&quot;" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+        <testcase name="And Close browser" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario Outline: Login" time="0.021">
+        <testsuite name="Examples:" time="0.021">
+          <testsuite name="| admin@yourstore.com | admin |" time="0.0">
+            <testcase name="Given User launch browser" classname="| admin@yourstore.com | admin |" time="0.0" ignored="true"/>
+            <testcase name="When User opens URL &quot;https://admin-demo.nopcommerce.com/login&quot;" classname="| admin@yourstore.com | admin |" time="0.0" ignored="true"/>
+            <testcase name="And User Enter Email &quot;admin@yourstore.com&quot; and Password &quot;admin&quot;" classname="| admin@yourstore.com | admin |" time="0.0" ignored="true"/>
+            <testcase name="And User Click on Login" classname="| admin@yourstore.com | admin |" time="0.0" ignored="true"/>
+            <testcase name="Then Page title should be &quot;Dashboard / nopCommerce administration&quot;" classname="| admin@yourstore.com | admin |" time="0.0" ignored="true"/>
+            <testcase name="When User click on Logout" classname="| admin@yourstore.com | admin |" time="0.0" ignored="true"/>
+            <testcase name="Then Page title should be &quot;Your store. Login&quot;" classname="| admin@yourstore.com | admin |" time="0.0" ignored="true"/>
+            <testcase name="And Close browser" classname="| admin@yourstore.com | admin |" time="0.0" ignored="true"/>
+          </testsuite>
+          <testsuite name="| aPmin@yourstore.com | admin123 |" time="0.0">
+            <testcase name="Given User launch browser" classname="| aPmin@yourstore.com | admin123 |" time="0.001" ignored="true"/>
+            <testcase name="When User opens URL &quot;https://admin-demo.nopcommerce.com/login&quot;" classname="| aPmin@yourstore.com | admin123 |" time="0.0" ignored="true"/>
+            <testcase name="And User Enter Email &quot;aPmin@yourstore.com&quot; and Password &quot;admin123&quot;" classname="| aPmin@yourstore.com | admin123 |" time="0.0" ignored="true"/>
+            <testcase name="And User Click on Login" classname="| aPmin@yourstore.com | admin123 |" time="0.0" ignored="true"/>
+            <testcase name="Then Page title should be &quot;Dashboard / nopCommerce administration&quot;" classname="| aPmin@yourstore.com | admin123 |" time="0.0" ignored="true"/>
+            <testcase name="When User click on Logout" classname="| aPmin@yourstore.com | admin123 |" time="0.0" ignored="true"/>
+            <testcase name="Then Page title should be &quot;Your store. Login&quot;" classname="| aPmin@yourstore.com | admin123 |" time="0.0" ignored="true"/>
+            <testcase name="And Close browser" classname="| aPmin@yourstore.com | admin123 |" time="0.0" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

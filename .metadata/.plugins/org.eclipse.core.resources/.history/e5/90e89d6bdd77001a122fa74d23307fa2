@@ -1,0 +1,71 @@
+package PageMethod;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import PageObject.AddCustomerPage;
+
+public class AddCustomerMethod {
+	
+	public WebDriver ldriver;
+	
+	public AddCustomerPage acp;
+
+	/*public AddCustomerMethod(WebDriver rdriver)
+	{
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
+	}*/
+	
+	public void setCustomermenu()
+	{
+		acp.lkhCustomer_menu.click();
+	}
+	
+	public void setCustomermenuitem() 
+	{
+	
+		acp.lkhCustomer_menuitem.click();
+	}
+	
+	public void setEmail() 
+	{
+		
+		acp.txtEmail.sendKeys("Vivek@gmail.com");
+	}
+	
+	public void setPassword() 
+	{
+		acp.txtPassword.sendKeys("admin123");
+	}
+	
+	public void setFirestName() 
+	{
+		acp.txtFirestName.sendKeys("Vivek");
+	}
+	
+	public void setLastName() 
+	{
+		acp.txtLastName.sendKeys("Baliyan");
+	}
+	
+	public void setGender() 
+	{
+		acp.rdFemaleGender.click();
+		acp.rdMaleGender.click();
+	}
+	public void setDOB()
+	{
+		acp.txtDOB.sendKeys("19/06/1989");
+	}
+	
+	public void setCompany() 
+	{
+		acp.txtCompany.sendKeys("Vivekandsons Pvt. Ltd.");
+	}
+	
+	public void setAdd() {
+		acp.btnAddNew.click();
+	}
+
+}

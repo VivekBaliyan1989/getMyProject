@@ -1,0 +1,53 @@
+package SeleniumFirstClass;
+
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class SeleniumFirstScript {
+
+	public static void main (String[] args) throws InterruptedException
+	{
+	
+		System.setProperty("webdriver.chrome.driver","F:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.amazon.com");
+		
+		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		WebElement move = driver.findElement(By.xpath("//a[@id='nav-link-accountList']"));
+		
+		//Using actions class and define "drive" in object where actions are used webElement 
+		Actions act = new Actions(driver);
+		
+		//Used to select text box and enter words in capital tellers.
+		act.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("vens").build().perform();
+		
+		//Double click
+		act.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("vens").doubleClick().build().perform();
+		
+		//Used for Mouse Over
+		act.moveToElement(move).build().perform();
+		
+		//Right click
+		act.moveToElement(move).contextClick().build().perform();
+		
+		Thread.sleep(5000);
+		
+		//driver.close();
+		
+		
+		
+		
+		
+		
+	
+	}
+	
+}

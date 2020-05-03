@@ -1,0 +1,44 @@
+package PageMethod;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import PageObject.LoginPage;
+
+
+public class LoginMethod {
+	
+	public WebDriver mdriver;
+	
+	public LoginPage lp;
+	
+	public LoginMethod(WebDriver ndriver) {
+
+		PageFactory.initElements(mdriver, LoginMethod.class);
+		this.mdriver=ndriver;
+	}
+	
+	public void setEmail(String email)
+	{
+		lp.txtEmail.clear();
+		lp.txtEmail.sendKeys(email);
+	}
+	
+	public void setPassword(String pwd)
+	{
+		lp.txtPassword.clear();
+		lp.txtPassword.sendKeys(pwd);
+	}
+	
+	public void clickLogin() 
+	{
+		lp.btnSubmit.click();
+	}
+	
+	public void clickLogout()
+	{
+		lp.lnkLogout.click();
+	}
+	
+
+}

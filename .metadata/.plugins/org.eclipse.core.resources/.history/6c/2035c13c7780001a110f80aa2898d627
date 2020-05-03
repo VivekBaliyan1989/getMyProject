@@ -1,0 +1,16 @@
+Feature: Create new customer
+
+Scenario: Successful login with valide credentials 
+    Given User launch browser
+    When User opens URL "https://admin-demo.nopcommerce.com/login"
+    And User Enter Email "admin@yourstore.com" and Password "admin"
+    And User Click on Login 
+  #  Then User can view Dashbord
+    When User click on customers menu
+    And Click on customers menu item
+    And Click on Add new button
+    Then User can view add new customers page
+    When User enter customer info
+    And Click on Save button
+    Then User can view conformation message "The new customer has been added successfully"
+    And Close browser

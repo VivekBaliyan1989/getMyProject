@@ -1,0 +1,33 @@
+package PageMethod;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import PageObject.AddCustomerPage;
+
+public class AddCustomerMethod {
+	
+	public WebDriver ldriver;
+	
+	public AddCustomerPage acp;
+
+	public AddCustomerMethod(WebDriver rdriver)
+	{
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
+	}
+	
+	public void customerDetails()
+	{
+		acp.lkhCustomer_menu.click();
+		acp.lkhCustomer_menuitem.click();
+		acp.txtEmail.sendKeys("vivek.@gmal.com");
+		acp.txtPassword.sendKeys("admin123");
+		acp.txtFirestName.sendKeys("Vivek");
+		acp.txtLastName.sendKeys("Baliyan");
+		acp.rdMaleGender.click();
+		acp.btnAddNew.click();
+		
+	}
+	
+}

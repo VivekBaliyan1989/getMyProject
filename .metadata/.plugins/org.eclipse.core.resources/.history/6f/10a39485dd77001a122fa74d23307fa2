@@ -1,0 +1,85 @@
+package PageMethod;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import PageObject.AddCustomerPage;
+
+public class CustomerMethod {
+	
+	public WebDriver ldriver;
+	
+	public AddCustomerPage acp;
+
+	public CustomerMethod(WebDriver rdriver)
+	{
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
+	}
+	
+	public void name() {
+		
+	}
+	
+	public void clickOnCustomermenu()
+	{
+		acp.lkhCustomer_menu.click();
+	}
+	
+	public void clickOnCustomermenuitem() 
+	{
+	
+		acp.lkhCustomer_menuitem.click();
+	}
+	
+	public void setEmail(String email) 
+	{
+		
+		acp.txtEmail.sendKeys(email);
+	}
+	
+	public void setPassword(String passwoed) 
+	{
+		acp.txtPassword.sendKeys(passwoed);
+	}
+	
+	public void setFirestName(String firestName) 
+	{
+		acp.txtFirestName.sendKeys(firestName);
+	}
+	
+	public void setLastName(String lastName) 
+	{
+		acp.txtLastName.sendKeys(lastName);
+	}
+	
+	public void clickOnGender(String gender) 
+	{
+		if(gender.equals("Male"))
+		{
+			acp.rdMaleGender.click();
+			
+		}else if (gender.equals("Female")) {
+			
+			acp.rdFemaleGender.click();
+			
+		} else {
+			acp.rdMaleGender.click();//Default
+		}
+		
+	}
+	public void setDOB(String DOB)
+	{
+		acp.txtDOB.sendKeys("19/06/1989");
+	}
+	
+	public void setCompany(String Company) 
+	{
+		acp.txtCompany.sendKeys("Vivekandsons Pvt. Ltd.");
+	}
+	
+	public void setAdd() {
+		acp.btnAddNew.click();
+	}
+
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testRun" project="Cucumber001_Framework" tests="8" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="TestRunner.testRun" incomplete="true">
+    <testsuite name="Feature: Login" time="2.222" incomplete="true">
+      <error>java.lang.OutOfMemoryError: Java heap space&#13;
+	at java.base/java.util.Arrays.copyOfRange(Arrays.java:4031)&#13;
+	at java.base/java.lang.StringUTF16.newString(StringUTF16.java:1142)&#13;
+	at java.base/java.lang.StringBuffer.toString(StringBuffer.java:710)&#13;
+	at java.base/java.io.StringWriter.toString(StringWriter.java:218)&#13;
+	at org.junit.runner.notification.Failure.getTrace(Failure.java:76)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestListener.testFailure(JUnit4TestListener.java:94)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestListener.testFailure(JUnit4TestListener.java:72)&#13;
+	at org.junit.runner.notification.SynchronizedRunListener.testFailure(SynchronizedRunListener.java:63)&#13;
+	at org.junit.runner.notification.RunNotifier$4.notifyListener(RunNotifier.java:142)&#13;
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:72)&#13;
+	at org.junit.runner.notification.RunNotifier.fireTestFailures(RunNotifier.java:138)&#13;
+	at org.junit.runner.notification.RunNotifier.fireTestFailure(RunNotifier.java:132)&#13;
+	at org.junit.internal.runners.model.EachTestNotifier.addFailure(EachTestNotifier.java:23)&#13;
+	at cucumber.runtime.junit.JUnitReporter.result(JUnitReporter.java:106)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:310)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+&#13;
+</error>
+      <testsuite name="Scenario: Successful login with valide credentials" incomplete="true">
+        <testcase name="Given User launch browser" classname="Scenario: Successful login with valide credentials" incomplete="true"/>
+        <testcase name="When User opens URL &quot;https://admin-demo.nopcommerce.com/login&quot;" classname="Scenario: Successful login with valide credentials" incomplete="true"/>
+        <testcase name="And User Enter Email &quot;admin@yourstore.com&quot; and Password &quot;admin&quot;" classname="Scenario: Successful login with valide credentials" incomplete="true"/>
+        <testcase name="And User Click on Login" classname="Scenario: Successful login with valide credentials" incomplete="true"/>
+        <testcase name="Then Page title should be &quot;Dashboard / nopCommerce administration&quot;" classname="Scenario: Successful login with valide credentials" incomplete="true"/>
+        <testcase name="When User click on Logout" classname="Scenario: Successful login with valide credentials" incomplete="true"/>
+        <testcase name="Then Page title should be &quot;Your store. Login&quot;" classname="Scenario: Successful login with valide credentials" incomplete="true"/>
+        <testcase name="And Close browser" classname="Scenario: Successful login with valide credentials" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

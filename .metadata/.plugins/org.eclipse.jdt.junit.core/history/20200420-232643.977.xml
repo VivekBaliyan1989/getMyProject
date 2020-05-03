@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testRun" project="Cucumber001_Framework" tests="13" started="13" failures="0" errors="2" ignored="3">
+  <testsuite name="TestRunner.testRun" time="30.126">
+    <testsuite name="Feature: Create new customer" time="30.126">
+      <testsuite name="Scenario: Successful login with valide credentials" time="30.108" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Vendor 1
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MIVJIU5', ip: '192.168.1.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: driver.version: unknown&#13;
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)&#13;
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)&#13;
+	at PageMethod.CustomerPageMethod.setManagerOfVendor(CustomerPageMethod.java:124)&#13;
+	at PageDefination.CustomerPageSteps.user_enter_customer_info(CustomerPageSteps.java:114)&#13;
+	at ✽.When User enter customer info(src/test/resources/Feature/Customers.feature:13)&#13;
+&#13;
+</error>
+        <testcase name="Given User launch browser" classname="Scenario: Successful login with valide credentials" time="6.894"/>
+        <testcase name="When User opens URL &quot;https://admin-demo.nopcommerce.com/login&quot;" classname="Scenario: Successful login with valide credentials" time="0.291"/>
+        <testcase name="And User Enter Email &quot;admin@yourstore.com&quot; and Password &quot;admin&quot;" classname="Scenario: Successful login with valide credentials" time="8.973"/>
+        <testcase name="And User Click on Login" classname="Scenario: Successful login with valide credentials" time="0.09"/>
+        <testcase name="Then User can view Dashbord" classname="Scenario: Successful login with valide credentials" time="0.109"/>
+        <testcase name="When User click on customers menu" classname="Scenario: Successful login with valide credentials" time="1.601"/>
+        <testcase name="And Click on customers menu item" classname="Scenario: Successful login with valide credentials" time="2.305"/>
+        <testcase name="And Click on Add new button" classname="Scenario: Successful login with valide credentials" time="0.017"/>
+        <testcase name="Then User can view add new customers page" classname="Scenario: Successful login with valide credentials" time="9.823"/>
+        <testcase name="When User enter customer info" classname="Scenario: Successful login with valide credentials" time="0.005">
+          <error>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Vendor 1
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MIVJIU5', ip: '192.168.1.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: driver.version: unknown&#13;
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)&#13;
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)&#13;
+	at PageMethod.CustomerPageMethod.setManagerOfVendor(CustomerPageMethod.java:124)&#13;
+	at PageDefination.CustomerPageSteps.user_enter_customer_info(CustomerPageSteps.java:114)&#13;
+	at ✽.When User enter customer info(src/test/resources/Feature/Customers.feature:13)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And Click on Save button" classname="Scenario: Successful login with valide credentials" time="0.002" ignored="true"/>
+        <testcase name="Then User can view conformation message &quot;The new customer has been added successfully&quot;" classname="Scenario: Successful login with valide credentials" time="0.001" ignored="true"/>
+        <testcase name="And Close browser" classname="Scenario: Successful login with valide credentials" time="0.012" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

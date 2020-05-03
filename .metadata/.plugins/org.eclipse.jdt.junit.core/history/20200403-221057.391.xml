@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testRun" project="Cucumber001_Framework" tests="8" started="8" failures="0" errors="0" ignored="8">
+  <testsuite name="TestRunner.testRun" time="0.0">
+    <testsuite name="Feature: Login" time="0.0">
+      <testsuite name="Scenario: Successful login with valide credentials" time="0.0">
+        <testcase name="Given User launch browser" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+        <testcase name="When User opens URL &quot;https://admin-demo.nopcommerce.com/login&quot;" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+        <testcase name="And User Enter Email &quot;admin@yourstore.com&quot; and Password &quot;admin&quot;" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+        <testcase name="And User Click on Login" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+        <testcase name="Then Page title should be &quot;Dashboard / nopCommerce administration&quot;" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+        <testcase name="When User click on Logout" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+        <testcase name="Then Page title should be &quot;Your Store. Login&quot;" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+        <testcase name="And Close browser" classname="Scenario: Successful login with valide credentials" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

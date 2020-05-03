@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testRun" project="Cucumber001_Framework" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="TestRunner.testRun" time="9.15">
+    <testsuite name="Feature: Create new customer" time="9.149">
+      <testsuite name="Scenario: Successful login with valide credentials" time="9.149">
+        <testcase name="Given User launch browser" classname="Scenario: Successful login with valide credentials" time="1.882"/>
+        <testcase name="When User opens URL &quot;https://admin-demo.nopcommerce.com/login&quot;" classname="Scenario: Successful login with valide credentials" time="0.419"/>
+        <testcase name="And User Enter Email &quot;admin@yourstore.com&quot; and Password &quot;admin&quot;" classname="Scenario: Successful login with valide credentials" time="6.132"/>
+        <testcase name="And User Click on Login" classname="Scenario: Successful login with valide credentials" time="0.18"/>
+        <testcase name="Then User can view Dashbord" classname="Scenario: Successful login with valide credentials" time="0.51"/>
+        <testcase name="When User click on customers menu" classname="Scenario: Successful login with valide credentials" time="0.026"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

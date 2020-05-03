@@ -1,0 +1,16 @@
+package PageDefination;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import PageObject.LoginPage;
+import cucumber.api.java.en.*;
+
+public class Steps {
+	
+	public WebDriver driver;
+	public LoginPage lp;
+	
+	
+}

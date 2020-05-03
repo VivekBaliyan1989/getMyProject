@@ -1,0 +1,19 @@
+package TestRunner;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions
+			(features = ".//LoginFeature.feature",
+			glue = "Pagedefination",
+			dryRun = true,
+			plugin = {"pretty", "htlm:test-output"}
+			
+		)
+
+public class testRun {
+
+}
