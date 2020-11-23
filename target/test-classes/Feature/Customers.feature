@@ -1,6 +1,6 @@
 Feature: Create new customer
 
-Scenario: Successful login with valide credentials 
+Scenario: Successful login with valid credentials 
     Given User launch browser
     When User opens URL "https://admin-demo.nopcommerce.com/login"
     And User Enter Email "admin@yourstore.com" and Password "admin"
